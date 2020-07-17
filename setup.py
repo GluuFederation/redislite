@@ -52,8 +52,8 @@ class BuildRedis(build):
         cmd.extend(targets)
 
         target_files = [
-            os.path.join(REDIS_PATH, 'bin/redis-server'),
-            os.path.join(REDIS_PATH, 'bin/redis-cli'),
+            os.path.join(REDIS_PATH, 'src/redis-server'),
+            os.path.join(REDIS_PATH, 'src/redis-cli'),
         ]
 
         def _compile():
